@@ -9,7 +9,6 @@ A fast and lightweight tool that automatically detects and redeems Telegram gift
 - Python 3.10+ (better with `pyenv`)
 - `nodejs` & `npm` for `pm2` installing
 - `pm2` for process management ([Install Guide](https://pm2.keymetrics.io/))
-- `pip` dependencies (`pip install -r requirements.txt`)
 - A working `.env` file with proper configuration
     - You can exclude gifts by adding their names in `EXCLUDE`
 - Telegram session strings saved in `sessions.txt`
@@ -17,9 +16,17 @@ A fast and lightweight tool that automatically detects and redeems Telegram gift
 ---
 
 ## 🏃 Run the Sniper with PM2
-- Use the provided `run.py` to generate the `ecosystem.config.js` file dynamically:
+- Clone the repo
 ```bash
-python main.py
+git clone https://github.com/z44d/TgGiftsSniper && cd TgGiftsSniper
+```
+- Install dependencies
+```bash
+pip install -r requirements.txt
+```
+- Use the provided `gen.py` to generate the `ecosystem.config.js` file dynamically:
+```bash
+python gen.py
 ```
 - This script will:
     - Split your sessions into chunks (default: 50 per process)
