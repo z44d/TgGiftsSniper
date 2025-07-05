@@ -17,9 +17,11 @@ from requests.exceptions import ReadTimeout
 from itertools import cycle
 from dotenv import load_dotenv
 
-load_dotenv()
 
 SESSIONS_PATH = Path(os.environ.get("SESSIONS_PATH"))
+
+load_dotenv()
+
 TOKEN = os.environ.get("TOKEN")
 BUY_TO = os.environ.get("BUY_TO")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
@@ -31,6 +33,8 @@ if EXCLUDE:
     EXCLUDE_LIST = [i.strip() for i in EXCLUDE]
 else:
     EXCLUDE_LIST = []
+
+PROCESS = 0
 
 clients: List[Client] = []
 gifts: Dict[int, int] = {}
