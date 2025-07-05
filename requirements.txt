@@ -1,0 +1,7 @@
+uvloop
+uvicorn
+fastapi
+requests
+kurigram
+tgcrypto
+python-dotenv

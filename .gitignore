@@ -1,0 +1,6 @@
+__pycache__/
+*.json
+test.py
+sessions.txt
+sessions_*.txt
+ecosystem.config.js
