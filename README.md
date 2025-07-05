@@ -24,9 +24,9 @@ git clone https://github.com/z44d/TgGiftsSniper && cd TgGiftsSniper
 ```bash
 pip install -r requirements.txt
 ```
-- Use the provided `gen.py` to generate the `ecosystem.config.js` file dynamically:
+- Use the provided `run.py` to generate the `ecosystem.config.js` file dynamically:
 ```bash
-python gen.py
+python run.py
 ```
 - This script will:
     - Split your sessions into chunks (default: 50 per process)
