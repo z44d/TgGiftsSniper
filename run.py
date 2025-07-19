@@ -36,7 +36,7 @@ for x, y in enumerate(each_50, 1):
 apps.append(
     {
         "name": "server",
-        "script": "main.py",
+        "script": "server.py",
         "interpreter": interpreter,
         "log_date_format": "YYYY-MM-DD HH:mm:ss",
         "autorestart": True,
